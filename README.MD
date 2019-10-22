@@ -11,8 +11,11 @@ chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 
 
+# RSA Keys
 
+eval "$(ssh-agent -s)"
 
+ssh-add ~/.ssh/<your-key-name>
 
 # Install AWS CLI
 
